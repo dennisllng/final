@@ -1,4 +1,3 @@
-// ------------- VARIABLES ------------- //
 var ticking = false;
 var isFirefox = (/Firefox/i.test(navigator.userAgent));
 var isIe = (/MSIE/i.test(navigator.userAgent)) || (/Trident.*rv\:11\./i.test(navigator.userAgent));
@@ -9,7 +8,6 @@ var totalSlideNumber = $(".background").length;
 
 function parallaxScroll(evt) {
   if (isFirefox) {
-    //Set delta for Firefox
     delta = evt.detail * (-120);
   } else if (isIe) {
     //Set delta for IE
